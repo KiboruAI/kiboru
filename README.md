@@ -15,11 +15,11 @@ KIBORU is an open-source multi-agent AI system built on [OpenClaw](https://githu
 | Agent | Name | Specialty |
 |---|---|---|
 | 👑 KIBORU | Chief | Orchestrator — routes and coordinates all agents |
-| 📅 Clio | Scheduler | Schedules, reminders, time management |
-| 🔍 Nova | Researcher | Web research, analysis, fact-finding |
+| 📅 Kaze | Scheduler | Schedules, reminders, time management |
+| 🔍 Riku | Researcher | Web research, analysis, fact-finding |
 | ◎ Sol | On-chain | Solana wallets, token data, on-chain activity |
-| ✉ Hermes | Comms | Email, Telegram, notifications |
-| 🧠 Aria | Memory | Persistent memory, user profile, context |
+| ✉ Haru | Comms | Email, Telegram, notifications |
+| 🧠 Miko | Memory | Persistent memory, user profile, context |
 
 ---
 
@@ -88,7 +88,7 @@ User (Telegram / Web)
         │
    ┌────┴────┬──────┬──────┬──────┐
    ▼         ▼      ▼      ▼      ▼
- Clio      Nova    Sol  Hermes  Aria
+ Kaze      Riku    Sol  Haru  Miko
 Scheduler Research Onchain Comms Memory
         │
         ▼
