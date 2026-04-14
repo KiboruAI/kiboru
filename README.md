@@ -1,12 +1,21 @@
 # 🔴 KIBORU — AI Agent Army
 
-> Your personal AI commander with a team of specialist agents. Powered by OpenClaw. Works with any AI model.
-
-KIBORU is an open-source multi-agent AI system built on [OpenClaw](https://github.com/openclaw/openclaw). Instead of one general AI, KIBORU gives you a team — each agent specialized, all coordinated by KIBORU as the chief orchestrator.
+> Your personal AI commander with a team of 5 specialist agents. Free to try. Open source to self-host.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Built on OpenClaw](https://img.shields.io/badge/Built%20on-OpenClaw-red)](https://github.com/openclaw/openclaw)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-@KiboruAI__bot-blue)](https://t.me/KiboruAI_bot)
+[![Telegram Channel](https://img.shields.io/badge/Channel-@kiboruai-blue)](https://t.me/kiboruai)
 [![X](https://img.shields.io/badge/X-@KiboruAi-black)](https://x.com/KiboruAi)
+
+---
+
+## Try it free
+
+**Chat with KIBORU on Telegram → [t.me/KiboruAI_bot](https://t.me/KiboruAI_bot)**
+No signup. No setup. Just chat.
+
+Join the community → [t.me/kiboruai](https://t.me/kiboruai)
 
 ---
 
@@ -17,7 +26,7 @@ KIBORU is an open-source multi-agent AI system built on [OpenClaw](https://githu
 | 👑 KIBORU | Chief | Orchestrator — routes and coordinates all agents |
 | 📅 Kaze | Scheduler | Schedules, reminders, time management |
 | 🔍 Riku | Researcher | Web research, analysis, fact-finding |
-| ◎ Sol | On-chain | Solana wallets, token data, on-chain activity |
+| ◎ Ren | On-chain | Solana wallets, token data, on-chain activity |
 | ✉ Haru | Comms | Email, Telegram, notifications |
 | 🧠 Miko | Memory | Persistent memory, user profile, context |
 
@@ -25,56 +34,41 @@ KIBORU is an open-source multi-agent AI system built on [OpenClaw](https://githu
 
 ## Choose Your AI Model
 
-KIBORU works with **any AI provider** — use whatever you already have access to.
+KIBORU works with **any AI provider** — use whatever you already have.
 
 | Provider | Model | Notes |
 |---|---|---|
-| **Anthropic** | Claude Sonnet | Recommended — best for complex tasks |
+| **Anthropic** | Claude Haiku / Sonnet | Recommended |
 | **OpenAI** | GPT-4o | Great alternative |
 | **Groq** | Llama 3.3 70B | Fast & affordable |
 | **Google** | Gemini 2.0 Flash | Good balance |
 | **Ollama** | Llama 3.2, Qwen, etc. | Free, runs on your VPS |
 | **OpenRouter** | 100+ models | One key, many models |
 
-Just uncomment the provider you want in your `.env` file — that's it.
-
 ---
 
-## Quick Start
+## Self-Host in 5 Minutes
 
 ### Prerequisites
 - Docker + Docker Compose
-- API key from any supported AI provider (or Ollama for free)
+- API key from any supported AI provider
 - Telegram Bot token (from [@BotFather](https://t.me/BotFather))
 
-### 1. Clone the repo
+### Deploy
 ```bash
 git clone https://github.com/KiboruAI/kiboru.git
 cd kiboru
-```
-
-### 2. Configure environment
-```bash
 cp .env.example .env
-nano .env   # uncomment your preferred AI provider & add keys
-```
-
-### 3. Deploy
-```bash
+nano .env   # add your API key
 docker compose up -d
 ```
 
-### 4. Connect Telegram
+### Connect Telegram
 ```bash
 docker compose run --rm kiboru-gateway openclaw channels add \
   --channel telegram \
   --token YOUR_BOT_TOKEN
 ```
-
-### 5. Open dashboard
-Visit `http://your-vps-ip:3000` and paste your gateway token.
-
-Your army is live. 🔴
 
 ---
 
@@ -88,7 +82,7 @@ User (Telegram / Web)
         │
    ┌────┴────┬──────┬──────┬──────┐
    ▼         ▼      ▼      ▼      ▼
- Kaze      Riku    Sol  Haru  Miko
+ Kaze      Riku    Ren   Haru   Miko
 Scheduler Research Onchain Comms Memory
         │
         ▼
@@ -100,30 +94,20 @@ Scheduler Research Onchain Comms Memory
 
 ## Agent Packs (Coming Soon)
 
-Agent packs are bundles of specialized agents for specific lifestyles. Unlock with $KIBORU token (coming soon).
-
-- 🏃 **Healthy Life Pack** — workout scheduler, meal planner, habit tracker, sleep reminders
-- 🎬 **Creator Pack** — shoot schedule, video concepts, caption writer, editing briefs
-- ◎ **Crypto Pack** — token monitor, wallet tracker, alpha research, dev wallet watcher
+- 🏃 **Healthy Life Pack** — workout scheduler, meal planner, habit tracker
+- 🎬 **Creator Pack** — shoot schedule, video concepts, caption writer
+- ◎ **Crypto Pack** — token monitor, wallet tracker, alpha research
 - 📚 **Student Pack** — study schedule, research assistant, deadline tracker
 
----
-
-## VPS Recommendations
-
-| Provider | Plan | Price | Notes |
-|---|---|---|---|
-| **Hostinger** | KVM 2 | ~$7/mo | 1-click Docker, easiest setup |
-| **Hetzner** | CX22 | ~€4/mo | Best value, 2 vCPU 4GB RAM |
-| **DigitalOcean** | Basic | $6/mo | 1-click OpenClaw droplet |
-
-Minimum: 1 vCPU, 2GB RAM. Recommended: 2 vCPU, 4GB RAM.
+Packs will be unlockable via **$KIBORU token** (coming soon).
 
 ---
 
 ## Community
 
 - Website: [kiboru.xyz](https://kiboru.xyz)
+- Telegram Bot: [@KiboruAI_bot](https://t.me/KiboruAI_bot)
+- Telegram Channel: [@kiboruai](https://t.me/kiboruai)
 - X: [@KiboruAi](https://x.com/KiboruAi)
 - GitHub: [KiboruAI/kiboru](https://github.com/KiboruAI/kiboru)
 
@@ -131,7 +115,6 @@ Minimum: 1 vCPU, 2GB RAM. Recommended: 2 vCPU, 4GB RAM.
 
 ## Contributing
 
-Contributions welcome! You can:
 - Submit new agent SOUL.md templates
 - Build and share agent packs
 - Report issues or suggest features
@@ -146,4 +129,4 @@ MIT — free to use, modify, and distribute.
 
 ---
 
-*Built with ❤️ on OpenClaw · Any model. Your stack. Your army.*
+*Any model. Your stack. Your army. 🔴*
